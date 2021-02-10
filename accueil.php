@@ -21,8 +21,7 @@ include 'header/header.php';
         <img class="img1" src="img/fifa21.PNG" alt="">
         <p>Prix: 80€</p>
         <p>Dispo </p>
-        <a href="panier.php?action=ajout&amp;l=LIBELLEPRODUIT&amp;q=QUANTITEPRODUIT&amp;p=PRIXPRODUIT" onclick="window.open(this.href, '', 
-'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=600, height=350'); return false;"><button name="submit">Ajouter au Panier</button></a>
+        <a ><button name="submit">Ajouter au Panier</button></a>
     </div>
     <div class="box-item">
         <p>Produit 2</p>
