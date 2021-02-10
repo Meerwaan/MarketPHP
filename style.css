@@ -38,3 +38,29 @@ body{
   display: flex;
   justify-content: flex-end;
 }
+
+
+
+.box-item{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFEFEF;
+    height: 360px;
+    width: 260px;
+    border-radius: 2px;
+    border: 2px solid #3D4141;
+}
+
+.item{
+  display: flex;
+  justify-items: center;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+
+.img1{
+  width: 50%;
+  height: 50%;
+}
