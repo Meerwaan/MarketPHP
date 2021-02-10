@@ -18,8 +18,8 @@ require_once '../database/database.php';
 </head>
 <body >
 <?php 
-include '../header/header.php';
-?> 
+include 'header/header.php';
+?>
 
 <div class="item">
     <div class="box-item">

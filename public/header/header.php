@@ -50,12 +50,15 @@ if (isset($_SESSION['auth'])) : ?>
             <div class="collapse navbar-collapse d-flex justify-content-end" style="font-size: 15px" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 me-3" style="font-weight:400">
                     <li class="nav-item d-flex flex-column px-lg-3 pt-2 pt-lg-0">
-                        <a class="nav-link text-dark" aria-current="page" href="">Accueil</a>
+                        <a class="nav-link text-dark" aria-current="page" href="../accueil.php">Accueil</a>
                         <span class="border-li bg-danger rounded-pill ms-2"></span>
                     </li>
+                    <li class="nav-item d-flex flex-column px-lg-3 pt-2 pt-lg-0">
+                        <a class="nav-link text-dark" aria-current="page" href="connexion/inscription.php">Inscription</a>
+                        <span class="border-li bg-danger rounded-pill ms-2"></span>
                     </li>
                     <li class="nav-item d-flex flex-column px-lg-3">
-                        <a class="nav-link text-dark" href="">Connexion</a>
+                        <a class="nav-link text-dark" href="connexion/connexion.php">Connexion</a>
                         <span class="border-li bg-warning rounded-pill ms-2"></span>
                     </li>
                     <li class="nav-item d-flex flex-column px-lg-3">
