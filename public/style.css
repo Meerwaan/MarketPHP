@@ -1,46 +1,6 @@
 body{
   background-color: #5F8486;
 }
-
-.img{
-  height: 19px;
-  width: 25px;
-}
-
-
-.navbar {
-  width: 100%;
-  background-color: black;
-  overflow: auto;
-}
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 25px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-.navbar a:hover {
-  background-color: #8BA4A6 ;
-}
-
-
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
-
-.bout{
-  display: flex;
-  justify-content: flex-end;
-}
-
-
-
 .box-item{
   display: flex;
     flex-direction: column;
