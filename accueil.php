@@ -2,25 +2,18 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Accueil</title>
 </head>
 <body >
 <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="accueil.php"><img src="img/homepage.png" alt="logo" class="img"></a>
-
-            </div>
-            
-            <div class="bout">
-                
-                <a href="#">Se connecter</a>
-                <a href="#">Panier</a>
-            </div>
-        </nav>
-    </header>
+<?php
+include 'header/header.php';
+?> 
 
 <div class="item">
     <div class="box-item">
@@ -28,7 +21,8 @@
         <img class="img1" src="img/fifa21.PNG" alt="">
         <p>Prix: 80€</p>
         <p>Dispo </p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="panier.php?action=ajout&amp;l=LIBELLEPRODUIT&amp;q=QUANTITEPRODUIT&amp;p=PRIXPRODUIT" onclick="window.open(this.href, '', 
+'toolbar=no, location=no, directories=no, status=yes, scrollbars=yes, resizable=yes, copyhistory=no, width=600, height=350'); return false;"><button name="submit">Ajouter au Panier</button></a>
     </div>
     <div class="box-item">
         <p>Produit 2</p>
