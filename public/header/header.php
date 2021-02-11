@@ -64,7 +64,7 @@ if (isset($_SESSION['auth'])) : ?>
                     <li class="nav-item d-flex flex-column px-lg-3">
                         <a class="nav-link text-dark" href=">Inscription</a>
                         <span class="border-li bg-warning rounded-pill ms-2"></span>
-                    </li>
+                    </li>            
                 </ul>
             </div>
         </div>
