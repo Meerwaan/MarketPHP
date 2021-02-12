@@ -20,6 +20,6 @@
   }
   
   .topnav a.active {
-    background-color: #5F8486;
-    color: white;
+    background-color: #ddd;
+    color: black;
   }

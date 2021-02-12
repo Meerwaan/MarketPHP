@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="topnav">
-  <a class="active" href="../public/accueil.php">Home</a>
-  <a href="../public/connexion/inscription.php">Inscription</a>
+  <a class="active" href="../accueil.php">Home</a>
+  <a href="connexion/inscription.php">Inscription</a>
   <a href="../public//.php">Panier</a>
   
 </div>
