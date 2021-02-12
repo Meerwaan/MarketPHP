@@ -18,18 +18,25 @@ require_once '../database/database.php';
 </head>
 <body >
 <?php 
-include 'header/header.php';
+require 'header/header.php';
+?>
+
+<?php
+
 ?>
 
 <h1> Jeux Vidéos </h1>
 <div class="item">
+
+    <?php $products = $pdo->query('SELECT * FROM products'); ?>
+    <?php foreach ( $products as $product); ?>
     <div class="box-item">
-        <p>Fifa 21</p>
+        <?= $product->name; ?>
         <img class="img1" src="../img/fifa21.PNG" alt="">
-        <p>Prix: 80€</p>
+        <p><?= $product->price; ?> €</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Dispo</p>
-        <a ><button name="submit">Ajouter au Panier</button></a>
+        <a ><button name="submit" href="addpanier.php?id=<?= $product->id; ?>">Ajouter au Panier</button></a>
     </div>
     <div class="box-item">
         <p>COD Cold War</p>

@@ -1,4 +1,8 @@
 <?php
+require_once '../database/database.php';
+?>
+
+<?php
 
 if (isset($_SESSION['auth'])) : ?>
 
@@ -20,7 +24,7 @@ if (isset($_SESSION['auth'])) : ?>
                         <span class="border-li bg-danger rounded-pill ms-2"></span>
                     </li>
                     <li class="nav-item d-flex flex-column px-lg-3">
-                        <a class="nav-link text-dark" href="#">Panier</a>
+                        <a class="nav-link text-dark" href="index.php">Panier</a>
                         <span class="border-li bg-danger rounded-pill ms-2"></span>
                     </li>
                     <li class="nav-item d-flex flex-column px-lg-3">
@@ -51,6 +55,10 @@ if (isset($_SESSION['auth'])) : ?>
                 <ul class="navbar-nav mb-2 mb-lg-0 me-3" style="font-weight:400">
                     <li class="nav-item d-flex flex-column px-lg-3 pt-2 pt-lg-0">
                         <a class="nav-link text-dark" aria-current="page" href="../accueil.php">Accueil</a>
+                        <span class="border-li bg-danger rounded-pill ms-2"></span>
+                    </li>
+                    <li class="nav-item d-flex flex-column px-lg-3">
+                        <a class="nav-link text-dark" href="panier.php">Panier</a>
                         <span class="border-li bg-danger rounded-pill ms-2"></span>
                     </li>
                     <li class="nav-item d-flex flex-column px-lg-3 pt-2 pt-lg-0">
