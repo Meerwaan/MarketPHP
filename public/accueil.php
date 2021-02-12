@@ -16,11 +16,10 @@ require_once '../database/database.php';
 </head>
 <body >
 <?php 
-require 'header/header.php';
-?>
+include 'header/header.php';
 
-<?php
-
+print_r($_SESSION['panier']); // enlever le print quand la boucle est faite 
+// faire une boucle for pour le contenue du tableau du panier 
 ?>
 
 <h1> Jeux Vidéos </h1>
@@ -42,7 +41,7 @@ require 'header/header.php';
         <p>Prix: 60€</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Dispo</p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="cart.php?productName=CODColdWar" name="submit">Ajouter au Panier</a>
     </div>
     <div class="box-item">
         <p>Watch Dog Legion</p>
@@ -50,7 +49,7 @@ require 'header/header.php';
         <p>Prix: 50€</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Dispo</p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="cart.php?productName=WatchDogLegion" name="submit">Ajouter au Panier</a>
     </div>
     <div class="box-item">
         <p>Ass'Valhalla</p>
@@ -58,7 +57,7 @@ require 'header/header.php';
         <p>Prix: 70€</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Dispo</p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="cart.php?productName=Ass'Valhalla" name="submit">Ajouter au Panier</a>
     </div>
 </div>
 
@@ -70,7 +69,7 @@ require 'header/header.php';
         <p>Prix: 490€</p>
         <img class="img2" src="../img/stars.png" alt="">
         <p>Rupture </p>
-        <a ><button name="submit">Ajouter au Panier</button></a>
+        <a href="cart.php?productName=PS5" name="submit">Ajouter au Panier</a>
     </div>
     <div class="box-item">
         <p>Xbox Series X</p>
@@ -78,7 +77,7 @@ require 'header/header.php';
         <p>Prix: 500€</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Rupture</p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="cart.php?productName=XboxSeriesX" name="submit">Ajouter au Panier</a>
     </div>
     <div class="box-item">
         <p>Nintendo Switch</p>
@@ -86,7 +85,7 @@ require 'header/header.php';
         <p>Prix: 320€</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Dispo</p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="cart.php?productName=NintendoSwitch" name="submit">Ajouter au Panier</a>
     </div>
 </div>
 
@@ -98,7 +97,7 @@ require 'header/header.php';
         <p>Prix: 60€</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Dispo</p>
-        <a ><button name="submit">Ajouter au Panier</button></a>
+        <a href="cart.php?productName=PlaystationPlus" name="submit">Ajouter au Panier </a>
     </div>
     <div class="box-item">
         <p>Xbox Live</p>
@@ -106,7 +105,7 @@ require 'header/header.php';
         <p>Prix: 60€</p>
         <img class="img2" src="../img/stars.png" alt="">
         <p>Dispo</p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="cart.php?productName=XboxLive" name="submit">Ajouter au Panier</a>
     </div>
     <div class="box-item">
         <p>Nintendo Online</p>
@@ -114,7 +113,7 @@ require 'header/header.php';
         <p>Prix: 20€</p>
         <img class="img2" src="../img/stars.PNG" alt="">
         <p>Dispo</p>
-        <button name="submit">Ajouter au Panier</button>
+        <a href="cart.php?productName=NintendoOnline" name="submit">Ajouter au Panier</a>
     </div>
 </div>
 
